@@ -1,0 +1,10 @@
+schema_version: 1
+seed: 42
+# This holdout is selected only from official train, before training subsampling.
+validation_size: 500
+# Use 200 or 2000 for initial studies; null selects all remaining training questions.
+train_size: 200
+test_size: 100
+# Pinned upstream commit; branch/tag values are also resolved and recorded.
+revision: 740312add88f781978c0658806c59bc2815b9866
+output_dir: ../data/processed/gsm8k-200

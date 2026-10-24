@@ -1,0 +1,13 @@
+condition_id,reference,language,n_originals,left_only_correct,right_only_correct,discordant_pairs,p_value_two_sided
+english_lora,base,en,98,8,31,39,0.0002940768754342571
+english_lora,base,zh,98,5,24,29,0.0005461126565933228
+english_lora,base,de,98,7,25,32,0.0021024015732109547
+english_lora,base,ja,98,7,25,32,0.0021024015732109547
+multilingual_lora,base,en,98,7,22,29,0.008130058646202087
+multilingual_lora,base,zh,98,6,30,36,6.960169412195683e-05
+multilingual_lora,base,de,98,5,21,26,0.002493917942047119
+multilingual_lora,base,ja,98,10,20,30,0.09873714670538902
+multilingual_lora,english_lora,en,98,17,9,26,0.16863754391670227
+multilingual_lora,english_lora,zh,98,13,18,31,0.47312965989112854
+multilingual_lora,english_lora,de,98,13,11,24,0.8388197422027588
+multilingual_lora,english_lora,ja,98,19,11,30,0.20048842206597328

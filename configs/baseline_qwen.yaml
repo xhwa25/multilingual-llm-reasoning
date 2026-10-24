@@ -1,0 +1,19 @@
+schema_version: 1
+translation_manifest: ../data/translations/gsm8k-test-api/manifest.json
+output_dir: ../outputs/baseline-smoke-qwen
+backend: transformers
+model: Qwen/Qwen2.5-3B-Instruct
+# Resolved once to a commit SHA, saved and reused on resume.
+revision: main
+device: auto
+dtype: auto
+batch_size: 2
+max_new_tokens: 128
+temperature: 0
+do_sample: false
+seed: 42
+num_questions: 5
+split: test
+prompt_version: baseline-final-answer-v1
+# Complete bilingual review before a research baseline.
+allow_unreviewed_translations: false

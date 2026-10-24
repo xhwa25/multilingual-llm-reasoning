@@ -1,0 +1,20 @@
+schema_version: 1
+manifest_path: ../data/processed/gsm8k-200/manifest.json
+output_dir: ../data/translations/gsm8k-train-mock
+# train uses its prepared subset; validation uses its holdout; test uses its subset.
+splits: [train]
+provider: mock
+model: mock-v1
+prompt_version: gsm8k-translate-v1
+seed: 42
+review_sample_size: 25
+# Cumulative across resumes, including retries; English requires no requests.
+max_requests: 1800
+max_cost_usd: '0'
+input_usd_per_million: '0'
+output_usd_per_million: '0'
+max_output_tokens: 1024
+max_attempts: 3
+backoff_seconds: 1
+max_backoff_seconds: 30
+timeout_seconds: 60

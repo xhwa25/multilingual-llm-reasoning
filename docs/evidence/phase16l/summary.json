@@ -1,0 +1,594 @@
+{
+  "baseline_device_difference": "Reused baseline was generated on a different device; model, dtype, prompt and decoding were audited, but cross-device numerics can differ.",
+  "baseline_reused": true,
+  "bootstrap": {
+    "method": "paired percentile, linear quantiles, shared resamples",
+    "resamples": 5000,
+    "seed": 42,
+    "unit": "original_problem_id"
+  },
+  "comparison_signature": "ef0866ad05de8af77ccfe872ea461db756708b7a079d674a56f162429bbc965e",
+  "complete": true,
+  "consistency": [
+    {
+      "ci95_high": 0.4897959183673469,
+      "ci95_low": 0.30612244897959184,
+      "condition_id": "base",
+      "estimate": 0.3979591836734694,
+      "n_all_languages_correct": 39,
+      "n_originals": 98
+    },
+    {
+      "ci95_high": 0.25510204081632654,
+      "ci95_low": 0.10204081632653061,
+      "condition_id": "english_lora",
+      "estimate": 0.17346938775510204,
+      "n_all_languages_correct": 17,
+      "n_originals": 98
+    },
+    {
+      "ci95_high": 0.3163265306122449,
+      "ci95_low": 0.15306122448979592,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.23469387755102042,
+      "n_all_languages_correct": 23,
+      "n_originals": 98
+    }
+  ],
+  "contrasts": [
+    {
+      "ci95_high": -0.12219387755102412,
+      "ci95_low": -0.3469387755102041,
+      "condition_id": "english_lora",
+      "estimate": -0.23469387755102042,
+      "metric": "en",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.101785714285718,
+      "ci95_low": -0.29591836734693877,
+      "condition_id": "english_lora",
+      "estimate": -0.19387755102040816,
+      "metric": "zh",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.08163265306122448,
+      "ci95_low": -0.2857142857142857,
+      "condition_id": "english_lora",
+      "estimate": -0.1836734693877551,
+      "metric": "de",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.08163265306122448,
+      "ci95_low": -0.2857142857142857,
+      "condition_id": "english_lora",
+      "estimate": -0.1836734693877551,
+      "metric": "ja",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.14285714285714285,
+      "ci95_low": -0.25510204081632654,
+      "condition_id": "english_lora",
+      "estimate": -0.1989795918367347,
+      "metric": "macro_accuracy",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.12244897959183673,
+      "ci95_low": -0.32653061224489793,
+      "condition_id": "english_lora",
+      "estimate": -0.22448979591836735,
+      "metric": "all_languages_correct",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.05102040816326531,
+      "ci95_low": -0.25510204081632654,
+      "condition_id": "multilingual_lora",
+      "estimate": -0.15306122448979592,
+      "metric": "en",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.1326530612244898,
+      "ci95_low": -0.35714285714285715,
+      "condition_id": "multilingual_lora",
+      "estimate": -0.24489795918367346,
+      "metric": "zh",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.07142857142857142,
+      "ci95_low": -0.2653061224489796,
+      "condition_id": "multilingual_lora",
+      "estimate": -0.16326530612244897,
+      "metric": "de",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": 0.01020408163265306,
+      "ci95_low": -0.20408163265306123,
+      "condition_id": "multilingual_lora",
+      "estimate": -0.10204081632653061,
+      "metric": "ja",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.09948979591836735,
+      "ci95_low": -0.23214285714285715,
+      "condition_id": "multilingual_lora",
+      "estimate": -0.16581632653061223,
+      "metric": "macro_accuracy",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": -0.061224489795918366,
+      "ci95_low": -0.2653061224489796,
+      "condition_id": "multilingual_lora",
+      "estimate": -0.16326530612244897,
+      "metric": "all_languages_correct",
+      "n_originals": 98,
+      "reference": "base"
+    },
+    {
+      "ci95_high": 0.1836734693877551,
+      "ci95_low": -0.02040816326530612,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.08163265306122448,
+      "metric": "en",
+      "n_originals": 98,
+      "reference": "english_lora"
+    },
+    {
+      "ci95_high": 0.061224489795918366,
+      "ci95_low": -0.16326530612244897,
+      "condition_id": "multilingual_lora",
+      "estimate": -0.05102040816326531,
+      "metric": "zh",
+      "n_originals": 98,
+      "reference": "english_lora"
+    },
+    {
+      "ci95_high": 0.12244897959183673,
+      "ci95_low": -0.08163265306122448,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.02040816326530612,
+      "metric": "de",
+      "n_originals": 98,
+      "reference": "english_lora"
+    },
+    {
+      "ci95_high": 0.19387755102040816,
+      "ci95_low": -0.030612244897959183,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.08163265306122448,
+      "metric": "ja",
+      "n_originals": 98,
+      "reference": "english_lora"
+    },
+    {
+      "ci95_high": 0.08928571428571429,
+      "ci95_low": -0.02295918367346939,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.03316326530612245,
+      "metric": "macro_accuracy",
+      "n_originals": 98,
+      "reference": "english_lora"
+    },
+    {
+      "ci95_high": 0.14285714285714285,
+      "ci95_low": -0.02040816326530612,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.061224489795918366,
+      "metric": "all_languages_correct",
+      "n_originals": 98,
+      "reference": "english_lora"
+    }
+  ],
+  "denominator_policy": "Accuracy and primary parse-failure rate divide by all expected originals per language. Inference failures/pending count incorrect and are reported separately. No rows dropped.",
+  "english_gaps": [
+    {
+      "ci95_high": 0.04081632653061224,
+      "ci95_low": -0.16326530612244897,
+      "condition_id": "base",
+      "estimate": -0.061224489795918366,
+      "n_originals": 98,
+      "other_language": "zh"
+    },
+    {
+      "ci95_high": 0.1836734693877551,
+      "ci95_low": -0.02040816326530612,
+      "condition_id": "base",
+      "estimate": 0.08163265306122448,
+      "n_originals": 98,
+      "other_language": "de"
+    },
+    {
+      "ci95_high": 0.2857142857142857,
+      "ci95_low": 0.07142857142857142,
+      "condition_id": "base",
+      "estimate": 0.17346938775510204,
+      "n_originals": 98,
+      "other_language": "ja"
+    },
+    {
+      "ci95_high": 0.01020408163265306,
+      "ci95_low": -0.21428571428571427,
+      "condition_id": "english_lora",
+      "estimate": -0.10204081632653061,
+      "n_originals": 98,
+      "other_language": "zh"
+    },
+    {
+      "ci95_high": 0.14285714285714285,
+      "ci95_low": -0.09183673469387756,
+      "condition_id": "english_lora",
+      "estimate": 0.030612244897959183,
+      "n_originals": 98,
+      "other_language": "de"
+    },
+    {
+      "ci95_high": 0.24489795918367346,
+      "ci95_low": 0.0,
+      "condition_id": "english_lora",
+      "estimate": 0.12244897959183673,
+      "n_originals": 98,
+      "other_language": "ja"
+    },
+    {
+      "ci95_high": 0.14285714285714285,
+      "ci95_low": -0.08163265306122448,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.030612244897959183,
+      "n_originals": 98,
+      "other_language": "zh"
+    },
+    {
+      "ci95_high": 0.20408163265306123,
+      "ci95_low": -0.01020408163265306,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.09183673469387756,
+      "n_originals": 98,
+      "other_language": "de"
+    },
+    {
+      "ci95_high": 0.24489795918367346,
+      "ci95_low": 0.0,
+      "condition_id": "multilingual_lora",
+      "estimate": 0.12244897959183673,
+      "n_originals": 98,
+      "other_language": "ja"
+    }
+  ],
+  "expected_predictions": 1176,
+  "interpretation": "No improvement claim is made. Mock, incomplete, or provisional-translation results require caution.",
+  "mcnemar": [
+    {
+      "condition_id": "english_lora",
+      "discordant_pairs": 39,
+      "language": "en",
+      "left_only_correct": 8,
+      "n_originals": 98,
+      "p_value_two_sided": 0.0002940768754342571,
+      "reference": "base",
+      "right_only_correct": 31
+    },
+    {
+      "condition_id": "english_lora",
+      "discordant_pairs": 29,
+      "language": "zh",
+      "left_only_correct": 5,
+      "n_originals": 98,
+      "p_value_two_sided": 0.0005461126565933228,
+      "reference": "base",
+      "right_only_correct": 24
+    },
+    {
+      "condition_id": "english_lora",
+      "discordant_pairs": 32,
+      "language": "de",
+      "left_only_correct": 7,
+      "n_originals": 98,
+      "p_value_two_sided": 0.0021024015732109547,
+      "reference": "base",
+      "right_only_correct": 25
+    },
+    {
+      "condition_id": "english_lora",
+      "discordant_pairs": 32,
+      "language": "ja",
+      "left_only_correct": 7,
+      "n_originals": 98,
+      "p_value_two_sided": 0.0021024015732109547,
+      "reference": "base",
+      "right_only_correct": 25
+    },
+    {
+      "condition_id": "multilingual_lora",
+      "discordant_pairs": 29,
+      "language": "en",
+      "left_only_correct": 7,
+      "n_originals": 98,
+      "p_value_two_sided": 0.008130058646202087,
+      "reference": "base",
+      "right_only_correct": 22
+    },
+    {
+      "condition_id": "multilingual_lora",
+      "discordant_pairs": 36,
+      "language": "zh",
+      "left_only_correct": 6,
+      "n_originals": 98,
+      "p_value_two_sided": 6.960169412195683e-05,
+      "reference": "base",
+      "right_only_correct": 30
+    },
+    {
+      "condition_id": "multilingual_lora",
+      "discordant_pairs": 26,
+      "language": "de",
+      "left_only_correct": 5,
+      "n_originals": 98,
+      "p_value_two_sided": 0.002493917942047119,
+      "reference": "base",
+      "right_only_correct": 21
+    },
+    {
+      "condition_id": "multilingual_lora",
+      "discordant_pairs": 30,
+      "language": "ja",
+      "left_only_correct": 10,
+      "n_originals": 98,
+      "p_value_two_sided": 0.09873714670538902,
+      "reference": "base",
+      "right_only_correct": 20
+    },
+    {
+      "condition_id": "multilingual_lora",
+      "discordant_pairs": 26,
+      "language": "en",
+      "left_only_correct": 17,
+      "n_originals": 98,
+      "p_value_two_sided": 0.16863754391670227,
+      "reference": "english_lora",
+      "right_only_correct": 9
+    },
+    {
+      "condition_id": "multilingual_lora",
+      "discordant_pairs": 31,
+      "language": "zh",
+      "left_only_correct": 13,
+      "n_originals": 98,
+      "p_value_two_sided": 0.47312965989112854,
+      "reference": "english_lora",
+      "right_only_correct": 18
+    },
+    {
+      "condition_id": "multilingual_lora",
+      "discordant_pairs": 24,
+      "language": "de",
+      "left_only_correct": 13,
+      "n_originals": 98,
+      "p_value_two_sided": 0.8388197422027588,
+      "reference": "english_lora",
+      "right_only_correct": 11
+    },
+    {
+      "condition_id": "multilingual_lora",
+      "discordant_pairs": 30,
+      "language": "ja",
+      "left_only_correct": 19,
+      "n_originals": 98,
+      "p_value_two_sided": 0.20048842206597328,
+      "reference": "english_lora",
+      "right_only_correct": 11
+    }
+  ],
+  "mcnemar_scope": "Exact two-sided McNemar tests are per language, paired by canonical ID. No pooled 392-row independence assumption or multiple-testing correction.",
+  "mock": false,
+  "n_originals": 98,
+  "predictions": {
+    "count": 1176,
+    "path": "predictions.jsonl",
+    "sha256": "b394f917030901e3bbb1d65780b3bade5756fad27b27bf89d30efcbbf0840377"
+  },
+  "research_ready": false,
+  "schema_version": 1,
+  "summary": [
+    {
+      "accuracy": 0.7448979591836735,
+      "condition_id": "base",
+      "delta_ci95_high": 0.0,
+      "delta_ci95_low": 0.0,
+      "delta_vs_base": 0.0,
+      "language": "en",
+      "n_completed": 98,
+      "n_correct": 73,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 15,
+      "parse_failure_rate": 0.15306122448979592,
+      "parse_failure_rate_among_completed": 0.15306122448979592
+    },
+    {
+      "accuracy": 0.8061224489795918,
+      "condition_id": "base",
+      "delta_ci95_high": 0.0,
+      "delta_ci95_low": 0.0,
+      "delta_vs_base": 0.0,
+      "language": "zh",
+      "n_completed": 98,
+      "n_correct": 79,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 7,
+      "parse_failure_rate": 0.07142857142857142,
+      "parse_failure_rate_among_completed": 0.07142857142857142
+    },
+    {
+      "accuracy": 0.6632653061224489,
+      "condition_id": "base",
+      "delta_ci95_high": 0.0,
+      "delta_ci95_low": 0.0,
+      "delta_vs_base": 0.0,
+      "language": "de",
+      "n_completed": 98,
+      "n_correct": 65,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 16,
+      "parse_failure_rate": 0.16326530612244897,
+      "parse_failure_rate_among_completed": 0.16326530612244897
+    },
+    {
+      "accuracy": 0.5714285714285714,
+      "condition_id": "base",
+      "delta_ci95_high": 0.0,
+      "delta_ci95_low": 0.0,
+      "delta_vs_base": 0.0,
+      "language": "ja",
+      "n_completed": 98,
+      "n_correct": 56,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 10,
+      "parse_failure_rate": 0.10204081632653061,
+      "parse_failure_rate_among_completed": 0.10204081632653061
+    },
+    {
+      "accuracy": 0.5102040816326531,
+      "condition_id": "english_lora",
+      "delta_ci95_high": -0.12219387755102412,
+      "delta_ci95_low": -0.3469387755102041,
+      "delta_vs_base": -0.23469387755102042,
+      "language": "en",
+      "n_completed": 98,
+      "n_correct": 50,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 5,
+      "parse_failure_rate": 0.05102040816326531,
+      "parse_failure_rate_among_completed": 0.05102040816326531
+    },
+    {
+      "accuracy": 0.6122448979591837,
+      "condition_id": "english_lora",
+      "delta_ci95_high": -0.101785714285718,
+      "delta_ci95_low": -0.29591836734693877,
+      "delta_vs_base": -0.19387755102040816,
+      "language": "zh",
+      "n_completed": 98,
+      "n_correct": 60,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 5,
+      "parse_failure_rate": 0.05102040816326531,
+      "parse_failure_rate_among_completed": 0.05102040816326531
+    },
+    {
+      "accuracy": 0.47959183673469385,
+      "condition_id": "english_lora",
+      "delta_ci95_high": -0.08163265306122448,
+      "delta_ci95_low": -0.2857142857142857,
+      "delta_vs_base": -0.1836734693877551,
+      "language": "de",
+      "n_completed": 98,
+      "n_correct": 47,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 8,
+      "parse_failure_rate": 0.08163265306122448,
+      "parse_failure_rate_among_completed": 0.08163265306122448
+    },
+    {
+      "accuracy": 0.3877551020408163,
+      "condition_id": "english_lora",
+      "delta_ci95_high": -0.08163265306122448,
+      "delta_ci95_low": -0.2857142857142857,
+      "delta_vs_base": -0.1836734693877551,
+      "language": "ja",
+      "n_completed": 98,
+      "n_correct": 38,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 8,
+      "parse_failure_rate": 0.08163265306122448,
+      "parse_failure_rate_among_completed": 0.08163265306122448
+    },
+    {
+      "accuracy": 0.5918367346938775,
+      "condition_id": "multilingual_lora",
+      "delta_ci95_high": -0.05102040816326531,
+      "delta_ci95_low": -0.25510204081632654,
+      "delta_vs_base": -0.15306122448979592,
+      "language": "en",
+      "n_completed": 98,
+      "n_correct": 58,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 7,
+      "parse_failure_rate": 0.07142857142857142,
+      "parse_failure_rate_among_completed": 0.07142857142857142
+    },
+    {
+      "accuracy": 0.5612244897959183,
+      "condition_id": "multilingual_lora",
+      "delta_ci95_high": -0.1326530612244898,
+      "delta_ci95_low": -0.35714285714285715,
+      "delta_vs_base": -0.24489795918367346,
+      "language": "zh",
+      "n_completed": 98,
+      "n_correct": 55,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 1,
+      "parse_failure_rate": 0.01020408163265306,
+      "parse_failure_rate_among_completed": 0.01020408163265306
+    },
+    {
+      "accuracy": 0.5,
+      "condition_id": "multilingual_lora",
+      "delta_ci95_high": -0.07142857142857142,
+      "delta_ci95_low": -0.2653061224489796,
+      "delta_vs_base": -0.16326530612244897,
+      "language": "de",
+      "n_completed": 98,
+      "n_correct": 49,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 4,
+      "parse_failure_rate": 0.04081632653061224,
+      "parse_failure_rate_among_completed": 0.04081632653061224
+    },
+    {
+      "accuracy": 0.46938775510204084,
+      "condition_id": "multilingual_lora",
+      "delta_ci95_high": 0.01020408163265306,
+      "delta_ci95_low": -0.20408163265306123,
+      "delta_vs_base": -0.10204081632653061,
+      "language": "ja",
+      "n_completed": 98,
+      "n_correct": 46,
+      "n_expected": 98,
+      "n_inference_failures_or_pending": 0,
+      "n_parse_failures": 7,
+      "parse_failure_rate": 0.07142857142857142,
+      "parse_failure_rate_among_completed": 0.07142857142857142
+    }
+  ],
+  "uncertainty": "Exploratory unadjusted 95% intervals; no multiple-comparison correction. With 100 originals, each language accuracy changes by 1 percentage point per question. Bootstrap intervals can be degenerate and omit translation/model/seed uncertainty; not proof of improvement."
+}

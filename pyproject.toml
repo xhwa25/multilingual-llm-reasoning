@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multilingual-llm-reasoning"
+version = "0.1.0"
+description = "Reproducible cross-lingual mathematical reasoning and LoRA evaluation"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0.2,<7", "filelock>=3.16,<5", "packaging>=24,<27"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<10", "ruff>=0.11,<1"]
+data = ["datasets>=3.2,<5", "huggingface-hub>=0.28,<2"]
+translation = ["openai>=1.68,<3"]
+inference = ["torch>=2.6,<3", "transformers>=4.45,<5", "huggingface-hub>=0.28,<1", "jinja2>=3.1,<4"]
+sft = ["transformers>=4.45,<5", "huggingface-hub>=0.28,<1", "jinja2>=3.1,<4"]
+train = ["torch==2.8.0", "transformers==4.56.2", "peft==0.17.1", "trl==0.23.1", "accelerate==1.10.1", "datasets==4.1.1", "jinja2>=3.1,<4"]
+qlora = ["bitsandbytes==0.47.0; platform_system == 'Linux'"]
+analysis = ["pandas>=2.2,<3", "matplotlib>=3.9,<4"]
+
+[project.scripts]
+mlr = "multilingual_llm_reasoning.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

@@ -1,0 +1,4 @@
+{"id":"add-001","language":"en","prompt":"What is 2 + 3?","answer":"5"}
+{"id":"add-001","language":"es","prompt":"¿Cuánto es 2 + 3?","answer":"5"}
+{"id":"mul-001","language":"en","prompt":"What is 4 × 3?","answer":"12"}
+{"id":"mul-001","language":"es","prompt":"¿Cuánto es 4 × 3?","answer":"12"}

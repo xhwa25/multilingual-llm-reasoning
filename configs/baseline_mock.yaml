@@ -1,0 +1,19 @@
+schema_version: 1
+translation_manifest: ../data/translations/gsm8k-test-mock/manifest.json
+output_dir: ../outputs/baseline-smoke-mock
+backend: mock
+model: Qwen/Qwen2.5-3B-Instruct
+# Mock records identify mock-baseline-v1 as the actual checkpoint/revision.
+revision: main
+device: cpu
+dtype: auto
+batch_size: 4
+max_new_tokens: 128
+temperature: 0
+do_sample: false
+seed: 42
+num_questions: 5
+split: test
+prompt_version: baseline-final-answer-v1
+# Allowed only for this clearly labeled plumbing run.
+allow_unreviewed_translations: true

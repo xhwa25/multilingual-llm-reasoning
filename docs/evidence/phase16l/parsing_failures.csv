@@ -1,0 +1,13 @@
+condition_id,language,n_expected,n_parse_failures,parse_failure_rate
+base,en,98,15,0.15306122448979592
+base,zh,98,7,0.07142857142857142
+base,de,98,16,0.16326530612244897
+base,ja,98,10,0.10204081632653061
+english_lora,en,98,5,0.05102040816326531
+english_lora,zh,98,5,0.05102040816326531
+english_lora,de,98,8,0.08163265306122448
+english_lora,ja,98,8,0.08163265306122448
+multilingual_lora,en,98,7,0.07142857142857142
+multilingual_lora,zh,98,1,0.01020408163265306
+multilingual_lora,de,98,4,0.04081632653061224
+multilingual_lora,ja,98,7,0.07142857142857142

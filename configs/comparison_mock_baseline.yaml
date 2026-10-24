@@ -1,0 +1,17 @@
+schema_version: 1
+translation_manifest: ../data/translations/gsm8k-test-mock/manifest.json
+output_dir: ../outputs/comparison-mock
+backend: mock
+model: Qwen/Qwen2.5-3B-Instruct
+revision: main
+device: cpu
+dtype: auto
+batch_size: 4
+max_new_tokens: 128
+temperature: 0
+do_sample: false
+seed: 42
+num_questions: 100
+split: test
+prompt_version: baseline-final-answer-v1
+allow_unreviewed_translations: true

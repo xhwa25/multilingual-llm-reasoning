@@ -1,0 +1,6 @@
+schema_version: 1
+baseline_config: comparison_baseline.yaml
+english_adapter: ../outputs/training/english_lora/full/adapter
+multilingual_adapter: ../outputs/training/multilingual_lora/full/adapter
+bootstrap_seed: 42
+bootstrap_samples: 5000

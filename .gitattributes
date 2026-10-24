@@ -1,0 +1,2 @@
+# Preserve the byte-for-byte hashes of published aggregate evidence on every platform.
+docs/evidence/phase16l/* -text

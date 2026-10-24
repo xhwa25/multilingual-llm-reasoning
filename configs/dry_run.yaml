@@ -1,0 +1,11 @@
+# Paths resolve relative to this config, not the shell working directory.
+schema_version: 1
+seed: 42
+languages: [en, es]
+dataset_path: ../data/fixtures/synthetic.jsonl
+output_dir: ../outputs/dry-run
+model: mock
+lora:
+  rank: 8
+  alpha: 16
+  dropout: 0.05

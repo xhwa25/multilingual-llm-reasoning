@@ -1,0 +1,6 @@
+schema_version: 1
+baseline_config: comparison_mock_baseline.yaml
+english_adapter: null
+multilingual_adapter: null
+bootstrap_seed: 42
+bootstrap_samples: 5000

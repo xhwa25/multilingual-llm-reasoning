@@ -1,0 +1,17 @@
+schema_version: 1
+translation_manifest: ../data/translations/gsm8k-test-api/manifest.json
+output_dir: ../outputs/comparison-qwen
+backend: transformers
+model: Qwen/Qwen2.5-3B-Instruct
+revision: aa8e72537993ba99e69dfaafa59ed015b17504d1
+device: cuda:0
+dtype: float16
+batch_size: 1
+max_new_tokens: 256
+temperature: 0
+do_sample: false
+seed: 42
+num_questions: 100
+split: test
+prompt_version: baseline-final-answer-v1
+allow_unreviewed_translations: false

@@ -1,0 +1,7 @@
+# Phase 16L aggregate evidence
+
+These files are byte-for-byte copies of the aggregate final-evaluation files supplied in the downloaded Google Drive folder on 23 October 2026. They contain no raw GSM8K question text, translations, model responses, adapter weights, or credentials. They are the fixed source for the repository README and final research report.
+
+The original `reproducibility_manifest.json` lists SHA-256 digests for 16 final-run artifacts. **All 13 files present in the download matched their listed digests**: the 11 aggregate files in this directory plus the combined `predictions.jsonl` and `selected_test.jsonl`. The manifest also lists `base/predictions.jsonl`, `english_lora/predictions.jsonl`, and `multilingual_lora/predictions.jsonl`; those separate files were absent from the downloaded folder and their individual digests were not independently checked here. The combined predictions file was verified to contain 1,176 unique completed condition/problem/language rows, exactly 392 per condition, and was not copied into Git because it contains raw question prompts and responses.
+
+`summary.json` reports `complete: true`, `mock: false`, `expected_predictions: 1176`, `baseline_reused: true`, and `research_ready: false`. The provisional flag reflects incomplete translation review. The base-model responses were generated on MPS FP16 and the adapter responses on CUDA FP16. See the [research report](../../research_report.md) for interpretation and limitations.

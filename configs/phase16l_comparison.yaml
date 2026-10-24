@@ -1,0 +1,8 @@
+schema_version: 1
+baseline_config: phase16l_baseline.yaml
+english_adapter: ../outputs/phase16l-adapters/english/adapter
+multilingual_adapter: ../outputs/phase16l-adapters/multilingual/adapter
+bootstrap_seed: 42
+bootstrap_samples: 5000
+allow_provisional: true
+baseline_reuse_manifest: ../outputs/phase14i-lite-real-baseline-v1/results/manifest.json
